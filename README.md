@@ -58,35 +58,35 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.swift.*;
-import com.swift.auth.*;
-import com.swift.model.*;
-import com.swift.api.ConsumptionApi;
+import com.swift.ApiClient;
+import com.swift.ApiException;
+import com.swift.Configuration;
+import com.swift.api.ListRetrievalApi;
+import com.swift.auth.OAuth;
+import com.swift.model.EntityList;
 
-import java.io.File;
-import java.util.*;
+public class ListRetrievalApiEntitiesMyGetExample {
 
-public class ConsumptionApiExample {
+	public static void main(String[] args) {
+		
+		ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-    public static void main(String[] args) {
-        ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
-        // Configure OAuth2 access token for authorization: Bearer
-        OAuth Bearer = (OAuth) defaultClient.getAuthentication("Bearer");
-        Bearer.setAccessToken("YOUR ACCESS TOKEN");
+		// Configure OAuth2 access token for authorization: Bearer
+		OAuth Bearer = (OAuth) defaultClient.getAuthentication("Bearer");
+		Bearer.setAccessToken("your_access_token");
 
-        ConsumptionApi apiInstance = new ConsumptionApi();
-        String BIC = "BIC_example"; // String | BIC of the entity for which the data needs to be extracted
-        String documentId = "documentId_example"; // String | This Id is generated for each document
-        try {
-            Object result = apiInstance.documentNameByBicAndFolderIdGet(BIC, documentId);
-            System.out.println(result);
-        } catch (ApiException e) {
-            System.err.println("Exception when calling ConsumptionApi#documentNameByBicAndFolderIdGet");
-            e.printStackTrace();
-        }
-    }
+		ListRetrievalApi apiInstance = new ListRetrievalApi();
+		try {
+		    EntityList result = apiInstance.entitiesMyGet();
+		    System.out.println(result);
+		} catch (ApiException e) {
+		    System.err.println("Exception when calling ListRetrievalApi#entitiesMyGet");
+		    e.printStackTrace();
+		}
+	}
+
 }
+
 
 ```
 
@@ -96,8 +96,6 @@ All URIs are relative to *https://sandbox.swift.com/kyc/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ConsumptionApi* | [**documentNameByBicAndFolderIdGet**](docs/ConsumptionApi.md#documentNameByBicAndFolderIdGet) | **GET** /entities/folders/document/download | Get KYC Document by Id
-*ConsumptionApi* | [**entityFoldersProfileByBicGet**](docs/ConsumptionApi.md#entityFoldersProfileByBicGet) | **GET** /entities/folders/{BIC}/download | Download KYC Counterparties Data As Zip by BIC
 *ListRetrievalApi* | [**counterpartiesMyGet**](docs/ListRetrievalApi.md#counterpartiesMyGet) | **GET** /entities/counterparty | Get My Counterparties
 *ListRetrievalApi* | [**entitiesMyGet**](docs/ListRetrievalApi.md#entitiesMyGet) | **GET** /entities/my | Get My Entities
 
