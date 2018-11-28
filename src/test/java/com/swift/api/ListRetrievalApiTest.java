@@ -13,25 +13,24 @@
 
 package com.swift.api;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import org.junit.Assert;
+import org.junit.Test;
+
 import com.swift.ApiException;
 import com.swift.model.EntityList;
 import com.swift.model.ListOfCounterparties;
-import org.junit.Test;
-import org.junit.Ignore;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * API tests for ListRetrievalApi
  */
-@Ignore
+
 public class ListRetrievalApiTest {
 
-    private final ListRetrievalApi api = new ListRetrievalApi();
-
+   ListRetrievalApi api = mock(ListRetrievalApi.class);
+   
     
     /**
      * Get My Counterparties
@@ -43,9 +42,10 @@ public class ListRetrievalApiTest {
      */
     @Test
     public void counterpartiesMyGetTest() throws ApiException {
-        ListOfCounterparties response = api.counterpartiesMyGet();
-
-        // TODO: test validations
+        ListOfCounterparties mock_ApiResponse = mock(ListOfCounterparties.class);
+        when(api.counterpartiesMyGet()).thenReturn(mock_ApiResponse);
+        Assert.assertEquals(api.counterpartiesMyGet(),mock_ApiResponse);
+        System.out.println("Passed Test counterpartiesMyGetTest");
     }
     
     /**
@@ -58,9 +58,11 @@ public class ListRetrievalApiTest {
      */
     @Test
     public void entitiesMyGetTest() throws ApiException {
-        EntityList response = api.entitiesMyGet();
-
-        // TODO: test validations
+        
+        EntityList mock_ApiResponse = mock(EntityList.class);
+        when(api.entitiesMyGet()).thenReturn(mock_ApiResponse);
+        Assert.assertEquals(api.entitiesMyGet(),mock_ApiResponse);
+        System.out.println("Passed Test entitiesMyGetTest");
     }
     
 }
