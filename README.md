@@ -129,7 +129,7 @@ Authentication schemes defined for the API:
 
 - **Type**: OAuth
 - **Flow**: password
-- **Authorization URL**: 
+- **Authorization URL**: https://sandbox.swift.com/oauth2/v1
 - **Scopes**: N/A
 
 
