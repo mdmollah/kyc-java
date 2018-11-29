@@ -19,11 +19,11 @@ This API is a consumption query that enables you to download an evidencing docum
 ### Example
 ```java
 // Import classes:
-//import com.swift.ApiClient;
-//import com.swift.ApiException;
-//import com.swift.Configuration;
-//import com.swift.auth.*;
-//import com.swift.api.ConsumptionApi;
+//import com.swift.kyc.ApiClient;
+//import com.swift.kyc.ApiException;
+//import com.swift.kyc.Configuration;
+//import com.swift.kyc.auth.*;
+//import com.swift.kyc.api.ConsumptionApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -74,11 +74,11 @@ This API is a consumption query that enables you to extract the KYC profile in z
 ### Example
 ```java
 // Import classes:
-//import com.swift.ApiClient;
-//import com.swift.ApiException;
-//import com.swift.Configuration;
-//import com.swift.auth.*;
-//import com.swift.api.ConsumptionApi;
+//import com.swift.kyc.ApiClient;
+//import com.swift.kyc.ApiException;
+//import com.swift.kyc.Configuration;
+//import com.swift.kyc.auth.*;
+//import com.swift.kyc.api.ConsumptionApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
