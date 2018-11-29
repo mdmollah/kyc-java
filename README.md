@@ -26,7 +26,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>com.swift.api</groupId>
+    <groupId>com.swift.kyc</groupId>
     <artifactId>kyc-java</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.swift.api:kyc-java:1.0.0"
+compile "com.swift.kyc:kyc-java:1.0.0"
 ```
 
 ### Others
@@ -58,12 +58,12 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.swift.ApiClient;
-import com.swift.ApiException;
-import com.swift.Configuration;
-import com.swift.api.ListRetrievalApi;
-import com.swift.auth.OAuth;
-import com.swift.model.EntityList;
+import com.swift.kyc.ApiClient;
+import com.swift.kyc.ApiException;
+import com.swift.kyc.Configuration;
+import com.swift.kyc.api.ListRetrievalApi;
+import com.swift.kyc.auth.OAuth;
+import com.swift.kyc.model.EntityList;
 
 public class ListRetrievalApiEntitiesMyGetExample {
 
@@ -129,7 +129,7 @@ Authentication schemes defined for the API:
 
 - **Type**: OAuth
 - **Flow**: password
-- **Authorization URL**: https://sandbox.swift.com/oauth2/v1
+- **Authorization URL**: 
 - **Scopes**: N/A
 
 

@@ -19,11 +19,11 @@ This API is a list retrieval query that enables you to extract a list of all cou
 ### Example
 ```java
 // Import classes:
-//import com.swift.ApiClient;
-//import com.swift.ApiException;
-//import com.swift.Configuration;
-//import com.swift.auth.*;
-//import com.swift.api.ListRetrievalApi;
+//import com.swift.kyc.ApiClient;
+//import com.swift.kyc.ApiException;
+//import com.swift.kyc.Configuration;
+//import com.swift.kyc.auth.*;
+//import com.swift.kyc.api.ListRetrievalApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -68,11 +68,11 @@ This API is a list retrieval query that enables you to extract a list of all ent
 ### Example
 ```java
 // Import classes:
-//import com.swift.ApiClient;
-//import com.swift.ApiException;
-//import com.swift.Configuration;
-//import com.swift.auth.*;
-//import com.swift.api.ListRetrievalApi;
+//import com.swift.kyc.ApiClient;
+//import com.swift.kyc.ApiException;
+//import com.swift.kyc.Configuration;
+//import com.swift.kyc.auth.*;
+//import com.swift.kyc.api.ListRetrievalApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
