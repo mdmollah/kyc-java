@@ -1,4 +1,4 @@
-# kyc-java
+# kyc-java [![Build Status](https://travis-ci.com/swiftinc/kyc-java.svg?branch=master)](https://travis-ci.com/swiftinc/kyc-java)
 
 ## Requirements
 
@@ -26,7 +26,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>com.swift</groupId>
+    <groupId>com.swift.api</groupId>
     <artifactId>kyc-java</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.swift:kyc-java:1.0.0"
+compile "com.swift.api:kyc-java:1.0.0"
 ```
 
 ### Others
