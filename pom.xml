@@ -17,7 +17,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jar.finalName>${project.groupId}:${project.name}:${project.version}</jar.finalName>
 	</properties>
 
 	<build>
