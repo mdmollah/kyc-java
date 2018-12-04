@@ -19,12 +19,6 @@ mvn install
 ```
 
 ## Test
-
-```shell
-mvn test
-```
-
-## Test
 ### Maven users
 
 Add this dependency to your project's POM:
