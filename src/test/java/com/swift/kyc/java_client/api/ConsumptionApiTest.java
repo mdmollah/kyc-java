@@ -11,7 +11,7 @@
  */
 
 
-package com.swift.api.kyc.api;
+package com.swift.kyc.java_client.api;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -19,9 +19,9 @@ import static org.mockito.Mockito.when;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.swift.api.kyc.ApiException;
-import com.swift.api.kyc.model.EntityList;
-import com.swift.api.kyc.model.ListOfCounterparties;
+import com.swift.kyc.java_client.ApiException;
+import com.swift.kyc.java_client.model.EntityList;
+import com.swift.kyc.java_client.model.ListOfCounterparties;
 
 /**
  * API tests for ConsumptionApi

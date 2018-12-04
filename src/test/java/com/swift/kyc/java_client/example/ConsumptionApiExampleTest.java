@@ -1,16 +1,14 @@
-package com.swift.api.kyc.example;
+package com.swift.kyc.java_client.example;
+
 
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.swift.api.kyc.ApiClient;
-import com.swift.api.kyc.ApiException;
-import com.swift.api.kyc.Configuration;
-import com.swift.api.kyc.api.ConsumptionApi;
-import com.swift.api.kyc.auth.OAuth;
-import com.swift.api.kyc.model.EntityList;
-import com.swift.api.kyc.model.ListOfCounterparties;
+import com.swift.kyc.java_client.*;
+import com.swift.kyc.java_client.auth.*;
+import com.swift.kyc.java_client.model.*;
+import com.swift.kyc.java_client.api.ConsumptionApi;
 
 import junitparams.JUnitParamsRunner;
 
