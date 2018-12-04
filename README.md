@@ -1,8 +1,8 @@
-# KYC Java Client [![Build Status](https://travis-ci.com/swiftinc/kyc-java-client.svg?branch=master)](https://travis-ci.com/swiftinc/kyc-java-client)
+# KYC Java Client [![Build Status](https://travis-ci.com/swiftinc/kyc-java.svg?branch=master)](https://travis-ci.com/swiftinc/kyc-java)
 
 ## Overview
 
-This is the kyc java client project, which allows run the example tests after generation of KYC API client libraries (SDK generation), server stubs and documentation automatically given an KYC OpenAPI Spec. Currently, the following languages/frameworks are supported:
+This is the kyc java client project, which allows generation of KYC API client libraries (SDK generation), server stubs and execute the example tests. Currently, the following languages/frameworks are supported:
 
 * Java
 
@@ -18,6 +18,13 @@ To install the API client library to your local Maven repository, simply execute
 mvn install
 ```
 
+## Test
+
+```shell
+mvn test
+```
+
+## Test
 ### Maven users
 
 Add this dependency to your project's POM:
