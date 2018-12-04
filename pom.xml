@@ -17,6 +17,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jar.finalName>${project.groupId}:${project.name}:${project.version}</jar.finalName>
 	</properties>
 
 	<build>
@@ -36,7 +37,6 @@
 						<configuration>
 							<uri>https://developer-dev.swift.com/profiles/apigee/themes/apigee_responsive/documentation/kyc/swagger-kyc.json</uri>
 							<outputDirectory>${project.build.directory}</outputDirectory>
-							<outputFileName>swagger.json</outputFileName>
 						</configuration>
 					</execution>
 				</executions>
@@ -51,7 +51,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<inputSpec>${project.build.directory}/swagger.json</inputSpec>
+							<inputSpec>${project.build.directory}/swagger-kyc.json</inputSpec>
 							<language>java</language>
 							<output>${project.build.directory}/generated-sources</output>
 							<apiPackage>com.swift.kyc.java-client.api</apiPackage>
